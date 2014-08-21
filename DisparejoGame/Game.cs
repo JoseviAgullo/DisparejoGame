@@ -9,18 +9,30 @@ namespace DisparejoGame
     public class Game
     {
         List<Roll> rolls = new List<Roll>();
+        List<string> kindCoin = new List<string>();
         
 
         static void Main(string[] args)
         {
+            
         }
 
-        public void roll(String name, String result)
+        public void roll(String name, String coin)
         {
             Roll tmpRoll = new Roll();
             tmpRoll.Name = name;
-            tmpRoll.Coin = result;
+            tmpRoll.Coin = coin;
             rolls.Add(tmpRoll);
+        }
+
+        public void rollRandom(String name)
+        {
+            kindCoin.Add("Sol");
+            kindCoin.Add("Águila");
+
+            Random index = new Random();
+
+            this.roll(name, kindCoin[index.Next(0, 1)]);
         }
 
         public String showWinner()

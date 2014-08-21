@@ -38,5 +38,17 @@ namespace DisparejoGameTest
 
             Assert.AreEqual("Nadie", winner);
         }
+
+        [TestMethod]
+        public void TestNormalGameMixedOrder()
+        {
+            game.roll("Paco", "Sol");
+            game.roll("Pepe", "Águila");
+            game.roll("Juan", "Sol");
+            
+            String winner = game.showWinner();
+
+            Assert.AreEqual("Pepe", winner);
+        }
     }
 }
