@@ -8,7 +8,8 @@ namespace DisparejoGame
 {
     public class Game
     {
-        List<Roll> rolls;
+        List<Roll> rolls = new List<Roll>();
+        
 
         static void Main(string[] args)
         {
@@ -24,7 +25,26 @@ namespace DisparejoGame
 
         public String showWinner()
         {
-            return "Pepe";
+            string nameResult = "";
+            List<Roll> matchesSol = new List<Roll>();
+            List<Roll> matchesAguila = new List<Roll>();
+
+            matchesSol = rolls.FindAll(s => s.Coin.Equals("Sol"));
+            matchesAguila = rolls.FindAll(s => s.Coin.Equals("Águila"));
+
+            if (matchesSol.Count() == 1)
+            {
+                nameResult = rolls.Find(s => s.Coin.Equals("Sol")).Name;
+            }
+            else if (matchesAguila.Count() == 1)
+            {
+                nameResult = rolls.Find(s => s.Coin.Equals("Águila")).Name;
+            }
+            else
+                nameResult = "Nadie";
+                
+            
+            return nameResult;
         }
     }
 }
