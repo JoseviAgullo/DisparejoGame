@@ -7,11 +7,17 @@ namespace DisparejoGameTest
     [TestClass]
     public class TestUnits
     {
+        private Game game;
+
+        [TestInitialize]
+        public void setUp()
+        {
+            game = new Game();
+        }
+        
         [TestMethod]
         public void TestNormalGame()
-        {
-            Game game = new Game();
-
+        {         
             game.roll("Paco", "Sol");
             game.roll("Juan", "Sol");
             game.roll("Pepe", "Águila");
@@ -24,8 +30,6 @@ namespace DisparejoGameTest
         [TestMethod]
         public void TestDrawGame()
         {
-            Game game = new Game();
-
             game.roll("Paco", "Sol");
             game.roll("Juan", "Sol");
             game.roll("Pepe", "Sol");
