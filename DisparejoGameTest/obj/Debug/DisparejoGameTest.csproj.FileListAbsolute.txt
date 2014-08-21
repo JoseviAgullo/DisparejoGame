@@ -1,0 +1,7 @@
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\bin\Debug\DisparejoGameTest.dll
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\bin\Debug\DisparejoGameTest.pdb
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\bin\Debug\DisparejoGame.exe
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\bin\Debug\DisparejoGame.pdb
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\obj\Debug\DisparejoGameTest.csprojResolveAssemblyReference.cache
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\obj\Debug\DisparejoGameTest.dll
+C:\Users\Josevi\Documents\Visual Studio 2013\Projects\DisparejoGame\DisparejoGameTest\obj\Debug\DisparejoGameTest.pdb
