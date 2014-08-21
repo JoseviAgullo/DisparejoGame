@@ -13,8 +13,12 @@ namespace DisparejoGameTest
             Game game = new Game();
 
             game.roll("Paco", "Sol");
+            game.roll("Juan", "Sol");
+            game.roll("Pepe", "Águila");
 
-            game.showWinner();
+            String winner = game.showWinner();
+
+            Assert.AreEqual("Pepe", winner);
         }
     }
 }

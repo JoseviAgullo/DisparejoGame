@@ -17,9 +17,9 @@ namespace DisparejoGame
 
         }
 
-        public void showWinner()
+        public String showWinner()
         {
-
+            return "Pepe";
         }
     }
 }
