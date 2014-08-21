@@ -8,7 +8,7 @@ namespace DisparejoGameTest
     public class TestUnits
     {
         [TestMethod]
-        public void TestRoll()
+        public void TestNormalGame()
         {
             Game game = new Game();
 
@@ -19,6 +19,20 @@ namespace DisparejoGameTest
             String winner = game.showWinner();
 
             Assert.AreEqual("Pepe", winner);
+        }
+
+        [TestMethod]
+        public void TestDrawGame()
+        {
+            Game game = new Game();
+
+            game.roll("Paco", "Sol");
+            game.roll("Juan", "Sol");
+            game.roll("Pepe", "Sol");
+
+            String winner = game.showWinner();
+
+            Assert.AreEqual("Nadie", winner);
         }
     }
 }
