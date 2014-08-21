@@ -11,5 +11,10 @@ namespace DisparejoGame
         static void Main(string[] args)
         {
         }
+
+        public void roll(String name, String result)
+        {
+
+        }
     }
 }

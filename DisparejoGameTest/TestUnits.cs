@@ -8,9 +8,11 @@ namespace DisparejoGameTest
     public class TestUnits
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestRoll()
         {
             Game game = new Game();
+
+            game.roll("Paco", "Sol");          
         }
     }
 }
