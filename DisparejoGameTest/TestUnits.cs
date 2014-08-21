@@ -24,7 +24,7 @@ namespace DisparejoGameTest
 
             String winner = game.showWinner();
 
-            Assert.AreEqual("Pepe", winner);
+            Assert.AreEqual("El ganador es Pepe", winner);
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace DisparejoGameTest
 
             String winner = game.showWinner();
 
-            Assert.AreEqual("Nadie", winner);
+            Assert.AreEqual("No hay ganador, las monedas son iguales", winner);
         }
 
         [TestMethod]
@@ -48,7 +48,7 @@ namespace DisparejoGameTest
             
             String winner = game.showWinner();
 
-            Assert.AreEqual("Pepe", winner);
+            Assert.AreEqual("El ganador es Pepe", winner);
         }
     }
 }

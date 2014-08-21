@@ -46,14 +46,14 @@ namespace DisparejoGame
 
             if (matchesSol.Count() == 1)
             {
-                nameResult = rolls.Find(s => s.Coin.Equals("Sol")).Name;
+                nameResult = "El ganador es " + rolls.Find(s => s.Coin.Equals("Sol")).Name;
             }
             else if (matchesAguila.Count() == 1)
             {
-                nameResult = rolls.Find(s => s.Coin.Equals("Águila")).Name;
+                nameResult = "El ganador es " + rolls.Find(s => s.Coin.Equals("Águila")).Name;
             }
             else
-                nameResult = "Nadie";
+                nameResult = "No hay ganador, las monedas son iguales";
                 
             
             return nameResult;
