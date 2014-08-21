@@ -12,7 +12,9 @@ namespace DisparejoGameTest
         {
             Game game = new Game();
 
-            game.roll("Paco", "Sol");          
+            game.roll("Paco", "Sol");
+
+            game.showWinner();
         }
     }
 }

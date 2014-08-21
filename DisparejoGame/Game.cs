@@ -16,5 +16,10 @@ namespace DisparejoGame
         {
 
         }
+
+        public void showWinner()
+        {
+
+        }
     }
 }
